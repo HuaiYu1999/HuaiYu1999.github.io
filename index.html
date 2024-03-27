@@ -2,33 +2,107 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title> Academic Profile</title>
-    <!-- Add stylesheets and responsive design meta tags -->
+    <title>Academic Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header,
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1,
+        footer h1 {
+            margin: 0;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 5px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .profile {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            max-width: 150px;
+            border-radius: 50%;
+        }
+        .profile h2 {
+            margin-top: 10px;
+        }
+        .research, .publications {
+            margin-bottom: 20px;
+        }
+        .publications article {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <!-- Navigation bar -->
+        <div class="container">
+            <h1>Academic Profile</h1>
+            <nav>
+                <ul>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#research">Research</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    
-    <main>
-        <!-- Profile picture and brief introduction -->
-        <section id="brief">
-            <!-- Content -->
-        </section>
 
-        <!-- Research Fields Section -->
-        <section id="research-fields">
-            <!-- Content with 3D cube graphic representation -->
-        </section>
+    <section id="profile" class="container profile">
+        <img src="profile.jpg" alt="Profile Picture">
+        <h2>Dr. Jane Doe</h2>
+        <p>Assistant Professor of Computer Science at XYZ University. Specializing in artificial intelligence, machine learning, and data analysis.</p>
+    </section>
 
-        <!-- Publications List -->
-        <section id="publications">
-            <!-- Content -->
-        </section>
-    </main>
-    
+    <section id="research" class="container research">
+        <h2>Research Fields</h2>
+        <p>My research interests include algorithmic fairness, interpretability of machine learning models, and the application of AI in healthcare.</p>
+    </section>
+
+    <section id="publications" class="container publications">
+        <h2>Selected Publications</h2>
+        <article>
+            <h3>Paper Title One</h3>
+            <p>Doe, J., Smith, A. (2023). Journal of AI Research, 45(2), 123-145.</p>
+        </article>
+        <article>
+            <h3>Paper Title Two</h3>
+            <p>Doe, J., Johnson, B. (2022). Proceedings of the International Conference on Machine Learning, 31, 567-576.</p>
+        </article>
+        <!-- Add more publications here -->
+    </section>
+
     <footer>
-        <!-- Footer content -->
+        <div class="container">
+            <h1>Contact Information</h1>
+            <p>Email: jane.doe@example.com | Phone: (123) 456-7890</p>
+        </div>
     </footer>
 </body>
 </html>
